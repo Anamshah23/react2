@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+    <meta charset="UTF-8" />
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- {/*     <script src="./AngularJs/angular.min.js"></script> */} -->
+    <title>Curriculum Vitae</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+      
+  </head>
+    
+  <body ng-app="myApp" ng-controller="myCtrl">
+        
+    <h1 class="heading">Curriculum Vitae</h1>
+        
+    <h4 class="subHeading">Personal Data</h4>
+        
+    <div class="perInfo">
+            
+      <p><strong>Name: </strong> {{info.name}}</p>
+            
+      <p><strong>Date of Birth:</strong> {{info.dof}}</p>
+            
+      <p><strong>Contact:</strong> {{info.mobile}}</p>
+            
+      <p><strong>Email I'd:</strong> {{info.email}}</p>
+          
+    </div>
+        
+    <h4 class="subHeading">Education</h4>
+        
+    <div class="info">
+            
+      <p>2018-2022</p>
+            
+      <p>
+                Information Engineering in the Gujrat Technological University from L.D.
+                college of Engineering       
+      </p>
+          
+    </div>
+        
+    <div class="info">
+            
+      <p>2016-2018</p>
+            
+      <p>
+                Higher Secondary School from Shree Swaminarayan Higher Secondary School,
+                Gandhinagar       
+      </p>
+          
+    </div>
+        
+    <div class="info">
+            
+      <p>2014-2016</p>
+            
+      <p>High School from Shree Swaminarayan High School, Gandhinagar</p>
+          
+    </div>
+        
+    <script>
+      const app = angular.module("myApp", []);
+      app.controller("myCtrl", ($scope) => {
+        const info = {
+          name: "Nirali Vaghela",
+          dof: "17-11-2000",
+          mobile: "9898359183",
+         
+        };
+        $scope.info = info;
+      });
+    </script>
+      
+  </body>
+</html>

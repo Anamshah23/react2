@@ -1,0 +1,30 @@
+body {
+    padding: 6rem 40rem;
+  background-color: rgb(70, 70, 71);
+  color: beige;
+   }
+   .container{
+       background-color: rgb(39, 39, 39);
+       padding: 2rem;
+       box-shadow: 4px 2px rgb(128, 125, 125);
+       border-radius: 5px;
+       width: 325px;
+   }
+   .gender{
+       font-size: 2rem;
+   }
+   label {
+    font-size: 1.5rem;
+   }
+   input[type="text"],[type="email"],[type="number"]{
+       width: 10rem;
+    margin: .5rem;
+    padding: .5rem;
+    background-color: rgb(181, 197, 228);
+   }
+   button{
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+   }
+   

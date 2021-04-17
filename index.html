@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initialscale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="#">
+        <h1>Contact Form</h1><br>
+        <label for="name">UserName :</label>
+        <input type="text" id="userName" />
+        <br />
+        <label for="email">Email-id :    </label>
+        <input type="email" id="email" />
+        <br />
+  
+        <label for="favColor">Fav Color :</label>
+        <input type="text" id="favColor" />
+        <br />
+        <label class="gender">Gender :-</label><br><br>
+
+        <label for="Female">Female</label>
+        <input type="radio" name="gender" id="Female" value="Female" />
+        <label for="Male">Male</label>
+        <input type="radio" name="gender" id="Male" value="Male" />
+        <label for="Other">Other</label>
+        <input type="radio" name="gender" id="Other" value="Other" />
+        <br /><br>
+        <label for="mobileNo">Mobile Number</label>
+        <input type="number" id="mobileNo" />
+        <br />
+        <button id="submitBtn">Submit</button>
+      </form>
+    </div>
+
+    <p id="data"></p>
+    <script src="index.js"></script>
+  </body>
+</html>
